@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Montserrat:wght@800&family=Space+Mono&display=swap');
 
+@font-face {
+    font-family: 'Gotham Black';
+    src:
+        url("Gotham\ Black\ Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Ultralight';
+    src:
+        url("HelveticaNeue-UltraLight.otf") format('opentype');
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +20,21 @@
     box-sizing: border-box;
 }
 
+.mytech-header {
+    height: 30px;
+    width: auto;
+    margin-left: -15%;
+    position: static;
+}
+
+.logo {
+    margin-left: -60%;
+}
+
 .gradient-background {
     min-height: 100%;
     height: auto;
-    width:100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -18,42 +42,107 @@
     bottom: 0;
     overflow: hidden;
     z-index: -99;
+    background-image: url("assets/gradient-backdrop.png");
+    background-size: cover;
+    background-position: center 0px;
 }
 
-.gradient-foreground {
-    position: relative;
-    width:100%;
+/**Header texts**/
+
+.header-text-left {
+    margin-left: 15%;
+    margin-top: 180px;
 }
 
-.Backdrop-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width:50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+.header-text-right {
+    float: right;
+    margin-right: 17%;
+    margin-top: -13.5%;
 }
 
+.header-text-bold {
+    font-size: 96px;
+    display: block;
+    color: #fff;
+    font-family: 'Gotham Black', sans-serif;
+}
 
-@media (min-aspect-ratio: 16/9) {
-    .gradient-foreground {
-        height: 300%;
-        top: -100%;
-        transform: scale(1.5);
+#text-mytech {
+    letter-spacing: 25px;
+}
 
+#text-2023 {
+    letter-spacing: 8px;
+    margin-top: -5%;
+    margin-left: 5%;
+}
 
+.header-text-light {
+    display: block;
+    color: #fff;
+    font-family: 'Helvetica Neue UltraLight', sans-serif;
+    font-weight: 500;
+
+}
+
+#text-careerfair {
+    font-size: 75px;
+
+    letter-spacing: 13px;
+    margin-top: -3%;
+}
+
+#text-session {
+    font-size: 45px;
+
+    letter-spacing: 15px;
+    margin-left: 5%;
+    margin-top: -5%;
+}
+
+@media only screen and (max-width: 1250px) {
+    .header-text-left {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-text-right {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+    }
+
+    .header-text-left,
+    .header-text-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 }
 
-@media (max-aspect-ratio: 16/9) {
-    .gradient-foreground {
-        width: 400%;
-        left: -150%;
-        transform: scale(4);
+@media only screen and (max-width: 600px) {
+    .header-text-bold {
+        font-size: 80px;
+    }
+
+    #text-mytech {
+        letter-spacing: 15px;
+    }
+
+    #text-careerfair {
+        font-size: 58px;
+        letter-spacing: 10px;
+        margin-top: -2%;
+    }
+
+    #text-session {
+        font-size: 47px;
+        letter-spacing: 8px;
+        margin-top: -3%;
     }
 }
-
-
 
 
 html {
