@@ -3,13 +3,13 @@
 @font-face {
     font-family: 'Gotham Black';
     src:
-        url("Gotham\ Black\ Regular.ttf") format('truetype');
+        url("font-awesome-4.7.0/fonts/Gotham\ Black\ Regular.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Helvetica Neue Ultralight';
     src:
-        url("HelveticaNeue-UltraLight.otf") format('opentype');
+        url("font-awesome-4.7.0/fonts/HelveticaNeue-UltraLight.otf") format('opentype');
 }
 
 
