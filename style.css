@@ -235,7 +235,7 @@ nav img {
 }
 
 .nav-links ul li a:hover {
-    color: #FFB703;
+    color: #f5c02f;
 }
 
 /**Header banner**/
@@ -375,15 +375,10 @@ h3 {
 
 .sponsors-carousel {
     width: 100%;
-
-
 }
 
 .sponsors-col {
-
     width: 20%;
-
-
 }
 
 
@@ -743,7 +738,7 @@ h2 {
 
 .timeline-items {
     max-width: 1000px;
-
+    display: none;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -854,16 +849,26 @@ h2 {
 
 }
 
+h5 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding-bottom: 30px;
+}
+
 .companies-col {
-
-
-
     /* margin: auto; */
     flex-basis: 31%;
     height: 100%;
     border-radius: 5%;
     margin-bottom: 5%;
 
+}
+
+#companies-col-special {
+    flex-basis: 50%;
+    padding: 5%;
 }
 
 .companies-col img {
