@@ -497,19 +497,20 @@ h3 {
 .cta {
 
     margin: 100px auto;
-    width: 70%;
+    width: 20%;
     background-image: linear-gradient(to bottom right, #FFB703, #FB8500);
     border-radius: 10px;
-    text-align: right;
-    padding: 75px 85px 75px;
+    text-align: center;
+    padding: 60px 50px;
     color: white;
+
 }
 
 
 
-.cta h1 {
+.cta h5 {
     font-size: 32px;
-    text-align: left;
+    text-align: center;
 }
 
 .cta p {
@@ -528,7 +529,7 @@ h3 {
     height: 40px;
     width: 40px;
     background-color: #FFB703;
-    margin: 30px 10px 10px 0;
+    margin: 20px 5px 5px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
