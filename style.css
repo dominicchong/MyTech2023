@@ -494,71 +494,29 @@ h3 {
 
 /*---call to action---*/
 
-.cta {
+.cta .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    margin: 100px auto;
-    width: 20%;
-    background-image: linear-gradient(to bottom right, #FFB703, #FB8500);
-    border-radius: 10px;
-    text-align: center;
-    padding: 60px 50px;
-    color: white;
+.cta h5 a {
+  display: inline-block;
+  padding: 60px 50px;
+  border-radius: 6px;
+  background-image: linear-gradient(to right, #5f9dff, #ff92d2);
+  color: #fff;
+  font-size: 32px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-image 0.3s ease;
+}
 
+.cta h5 a:hover {
+  background-image: linear-gradient(to right, #ff92d2, #5f9dff);
 }
 
 
-
-.cta h5 {
-    font-size: 32px;
-    text-align: center;
-}
-
-.cta p {
-    font-family: 'IBM Plex Sans Arabic', sans-serif;
-    margin: 10px 0;
-    font-size: 18px;
-    text-align: left;
-
-}
-
-.cta-col {
-    flex-basis: 48%;
-}
-
-.cta-col i {
-    height: 40px;
-    width: 40px;
-    background-color: #FFB703;
-    margin: 20px 5px 5px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    transform: scale(2);
-    color: white;
-}
-
-
-
-
-
-@media(max-width: 900px) {
-
-    .cta {
-        width: 80%;
-    }
-
-
-
-    .cta h1 {
-        font-size: 24px;
-    }
-
-    .cta-col {
-        text-align: left;
-    }
-
-
-}
 
 /*----about section-----*/
 
