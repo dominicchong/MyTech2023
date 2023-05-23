@@ -841,8 +841,8 @@ h5 {
 }
 
 #companies-col-special {
-    flex-basis: 48%;
-    padding: 5%;
+    flex-basis: 45%;
+    padding: 2%;
 }
 
 .companies-col img {
