@@ -14,8 +14,8 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
+    padding: 0 auto;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
     box-sizing: border-box;
 }
@@ -492,30 +492,6 @@ h3 {
 
 }
 
-/*---call to action---*/
-
-.cta .row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cta h5 a {
-  display: inline-block;
-  padding: 60px 50px;
-  border-radius: 6px;
-  background-image: linear-gradient(to right, #5f9dff, #ff92d2);
-  color: #fff;
-  font-size: 32px;
-  text-decoration: none;
-  text-align: center;
-  transition: background-image 0.3s ease;
-}
-
-.cta h5 a:hover {
-  background-image: linear-gradient(to right, #ff92d2, #5f9dff);
-}
-
 
 
 /*----about section-----*/
@@ -657,8 +633,8 @@ h2 {
     position: relative;
     text-align: center;
     text-decoration: none;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
     width: 100px;
@@ -693,6 +669,8 @@ h2 {
     text-decoration: none;
 
 }
+
+
 
 
 .timeline-items {
@@ -749,8 +727,6 @@ h2 {
     margin: 6px 0 15px;
     color: #151E34;
 
-
-
 }
 
 
@@ -796,6 +772,43 @@ h2 {
     }
 }
 
+h6 {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    flex-basis: 50%;
+}
+
+
+/*---call to action---*/
+
+.cta .row {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta h5 a {
+    display: inline-block;
+    padding: 50px 50px;
+    border-radius: 6px;
+    background-image: linear-gradient(to right, #5f9dff, #ff92d2);
+    color: #fff;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-image 0.3s ease;
+}
+
+.cta h5 a:hover {
+    background-image: linear-gradient(to right, #ff92d2, #5f9dff);
+}
+
+
+
 
 /**--companies section--**/
 
@@ -822,11 +835,12 @@ h5 {
     height: 100%;
     border-radius: 5%;
     margin-bottom: 5%;
+    padding: 10px;
 
 }
 
 #companies-col-special {
-    flex-basis: 50%;
+    flex-basis: 48%;
     padding: 5%;
 }
 
